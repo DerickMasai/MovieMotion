@@ -7,6 +7,12 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## MovieMotion
+
+MovieMotion is a fully open-source online tool serving entertainment media information related to films, documentaries, television programs, and animated content – including cast, production crew and the platforms they are available in.
+
+This is all achieved using TheMovieDb's REST API to gather required data for user consuption via a sleek, modern and clean user interface. All credit goes to TMDb for this amazing fully free (as of this publication) API! 
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
