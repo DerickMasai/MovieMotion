@@ -1,6 +1,6 @@
 <a href="{{ route('movies.index') }}" class="logo tt700 text-lg font-bold text-white flex flex-row">
-    <i class="fas fa-video my-auto mr-1 text-yellow-600"></i>
-    <h1 class="logo my-auto"> Movie<span>Motion</span></h1>
+    <i class="fas fa-video mt-0.5 mr-1 text-yellow-600"></i>
+    <h1 class="logo"> Movie<span>Motion</span></h1>
 </a>
 
 <ul class="tt300 hidden mt-2 md:mt-0 list-none text-white text-sm md:ml-16 md:flex md:flex-row md:justify-items-center md:items-center">
