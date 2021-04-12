@@ -2,6 +2,10 @@
 
 @section('content')
 
+    <nav class="px-32 py-5 m-0 border-b border-solid border-gray-800 flex flex-row">
+        @include('layouts.nav-movies')
+    </nav>
+
     <section class="px-10 md:px-24 lg:px-32 pb-10 mt-16 grid grid-cols-1 md:grid-cols-3 md:gap-x-12 border-b border-solid border-gray-800">
         <div class="col-start-1 h-96 w-full mb-8 md:mb-0">
             <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $movie['poster_path'] }}" alt="{{ $movie['title'] . ' movie poster' }}" class="w-full h-full object-cover">

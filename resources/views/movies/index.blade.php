@@ -2,6 +2,10 @@
 
 @section('content')
 
+    <nav class="px-32 py-5 m-0 border-b border-solid border-gray-800 flex flex-row">
+        @include('layouts.nav-movies')
+    </nav>
+
     <section class="px-32 mt-16 grid grid-cols-6 gap-24">
         @foreach ($headerMovieCast['cast'] as $actor)
 

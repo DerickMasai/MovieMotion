@@ -2,6 +2,10 @@
 
 @section('content')
 
+    <nav class="px-32 py-5 m-0 border-b border-solid border-gray-800 flex flex-row">
+        @include('layouts.nav-shows')
+    </nav>
+
     <header class="min-h-96 mt-16 mb-8 mx-32 rounded-xl justify-center flex flex-row z-10"
     x-data="{isOpen: false}"
     @keydown.escape.window="isOpen = false"

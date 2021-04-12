@@ -10,13 +10,10 @@
     <li class="mr-auto md:mr-0 md:ml-6">
         <a href="{{ route('tv-shows.index') }}" class="pro300">TV Shows</a>
     </li>
-    <li class="mr-auto md:mr-0 md:ml-6">
-        <a href="#">Actors</a>
-    </li>
 </ul>
 
 <ul class="tt300 md:ml-auto hidden mt-2 md:mt-0 md:flex md:flex-row list-none text-sm text-white relative">
-    <livewire:search-dropdown>
+    <livewire:shows-search-dropdown>
 </ul>
 
 <button type="button" class="menu-button list-none flex flex-col ml-auto md:hidden focus:outline-none">

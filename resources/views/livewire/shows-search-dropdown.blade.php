@@ -33,7 +33,7 @@
                     @foreach ($searchResults as $result)
                         <li class="transition ease-in-out duration-200 hover:bg-gray-600">
                             <a 
-                            href="{{ route('movies.show', $result['id']) }}" class="grid grid-cols-12 gap-x-2 py-3 px-3 border-b border-solid border-gray-600 pro400 text-gray-300 text-sm items-center transition ease-in-out duration-200 hover:text-white"
+                            href="{{ route('tv-shows.show', $result['id']) }}" class="grid grid-cols-12 gap-x-2 py-3 px-3 border-b border-solid border-gray-600 pro400 text-gray-300 text-sm items-center transition ease-in-out duration-200 hover:text-white"
                             @if ($loop->last)
                                 @keydown.tab="isOpen = false"
                             @endif>
@@ -42,7 +42,7 @@
                                     {{-- Check if poster exists --}}
                                     @if ($result['poster_path'])
 
-                                        <img src="{{ 'https://image.tmdb.org/t/p/w92/' . $result['poster_path'] }}" alt="{{ $result['title'] . ' movie poster' }}" class="w-full h-full object-cover">
+                                        <img src="{{ 'https://image.tmdb.org/t/p/w92/' . $result['poster_path'] }}" alt="{{ $result['name'] . ' movie poster' }}" class="w-full h-full object-cover">
 
                                     @else
                                     
@@ -55,10 +55,10 @@
 
                                 <div class="col-start-3 col-end-13 capitalize flex flex-col">
                                     <h5>
-                                        {{ $result['title'] }}
+                                        {{ $result['name'] }}
                                     </h5>
                                     <small class="pro300 text-white text-xs">
-                                        {{ Carbon\Carbon::parse($result['release_date'])->format('d M Y') }}
+                                        {{ Carbon\Carbon::parse($result['first_air_date'])->format('d M Y') }}
                                     </small>
                                 </div>
                             </a>

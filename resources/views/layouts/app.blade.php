@@ -12,10 +12,6 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
 </head>
 <body class="bg-gray-900">
-    
-    <nav class="px-32 py-5 m-0 border-b border-solid border-gray-800 flex flex-row">
-        @include('layouts.nav')
-    </nav>
 
     @yield('content')
 
