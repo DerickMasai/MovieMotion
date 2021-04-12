@@ -1,0 +1,156 @@
+@font-face {
+    font-family: TTThin;
+    src: url("../fonts/TTCommons/Thin.ttf");
+}
+@font-face {
+    font-family: TTExtraLight;
+    src: url("../fonts/TTCommons/ExtraLight.ttf");
+}
+@font-face {
+    font-family: TTLight;
+    src: url("../fonts/TTCommons/Light.ttf");
+}
+@font-face {
+    font-family: TTRegular;
+    src: url("../fonts/TTCommons/Regular.ttf");
+}
+@font-face {
+    font-family: TTMedium;
+    src: url("../fonts/TTCommons/Medium.ttf");
+}
+@font-face {
+    font-family: TTSemiBold;
+    src: url("../fonts/TTCommons/SemiBold.ttf");
+}
+@font-face {
+    font-family: TTBold;
+    src: url("../fonts/TTCommons/Bold.ttf");
+}
+@font-face {
+    font-family: TTExtraBold;
+    src: url("../fonts/TTCommons/ExtraBold.ttf");
+}
+@font-face {
+    font-family: TTBlack;
+    src: url("../fonts/TTCommons/Black.ttf");
+}
+
+.tt100 {
+    font-family: "TTThin", Helvetica, Arial, sans-serif;
+}
+.tt200 {
+    font-family: "TTExtraLight", Helvetica, Arial, sans-serif;
+}
+.tt300 {
+    font-family: "TTLight", Helvetica, Arial, sans-serif;
+}
+.tt400 {
+    font-family: "TTRegular", Helvetica, Arial, sans-serif;
+}
+.tt500 {
+    font-family: "TTMedium", Helvetica, Arial, sans-serif;
+}
+.tt600 {
+    font-family: "TTSemiBold", Helvetica, Arial, sans-serif;
+}
+.tt700 {
+    font-family: "TTBold", Helvetica, Arial, sans-serif;
+}
+.tt800 {
+    font-family: "TTExtraBold", Helvetica, Arial, sans-serif;
+}
+.tt900 {
+    font-family: "TTBlack", Helvetica, Arial, sans-serif;
+}
+
+/* ************************************* */
+/* ************************************* */
+/* ************************************* */
+
+
+@font-face {
+    font-family: ProximaNova-Thin;
+    src: url("../fonts/ProximaNova/Thin.ttf");
+}
+@font-face {
+    font-family: ProximaNova-Light;
+    src: url("../fonts/ProximaNova/Light.ttf");
+}
+@font-face {
+    font-family: ProximaNova-Regular;
+    src: url("../fonts/ProximaNova/Regular.ttf");
+}
+@font-face {
+    font-family: ProximaNova-Medium;
+    src: url("../fonts/ProximaNova/Medium.ttf");
+}
+@font-face {
+    font-family: ProximaNova-SemiBold;
+    src: url("../fonts/ProximaNova/SemiBold.ttf");
+}
+@font-face {
+    font-family: ProximaNova-Bold;
+    src: url("../fonts/ProximaNova/Bold.ttf");
+}
+@font-face {
+    font-family: ProximaNova-ExtraBold;
+    src: url("../fonts/ProximaNova/ExtraBold.ttf");
+}
+@font-face {
+    font-family: ProximaNova-Black;
+    src: url("../fonts/ProximaNova/Black.ttf");
+}
+
+.pro100 {
+    font-family: "ProximaNova-Thin", Helvetica, Arial, sans-serif;
+}
+.pro300 {
+    font-family: "ProximaNova-Light", Helvetica, Arial, sans-serif;
+}
+.pro400 {
+    font-family: "ProximaNova-Regular", Helvetica, Arial, sans-serif;
+}
+.pro500 {
+    font-family: "ProximaNova-Medium", Helvetica, Arial, sans-serif;
+}
+.pro600 {
+    font-family: "ProximaNova-SemiBold", Helvetica, Arial, sans-serif;
+}
+.pro700 {
+    font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
+}
+.pro800 {
+    font-family: "ProximaNova-ExtraBold", Helvetica, Arial, sans-serif;
+}
+.pro900 {
+    font-family: "ProximaNova-Black", Helvetica, Arial, sans-serif;
+}
+
+
+/* ************************************* */
+/* ************************************* */
+/* ************************************* */
+
+
+@font-face {
+    font-family: Quicksand-Light;
+    src: url("../fonts/Quicksand/Light.otf");
+}
+@font-face {
+    font-family: Quicksand-Regular;
+    src: url("../fonts/Quicksand/Regular.otf");
+}
+@font-face {
+    font-family: Quicksand-Bold;
+    src: url("../fonts/Quicksand/Bold.otf");
+}
+
+.qs300 {
+    font-family: "Quicksand-Regular", Helvetica, Arial, sans-serif;
+}
+.qs400 {
+    font-family: "Quicksand-Regular", Helvetica, Arial, sans-serif;
+}
+.qs700 {
+    font-family: "Quicksand-Bold", Helvetica, Arial, sans-serif;
+}
