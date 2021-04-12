@@ -9,6 +9,8 @@
 
 ## MovieMotion
 
+<img src="https://derickmasai.com/src/img/github-img.png">
+
 MovieMotion is a fully open-source online tool serving entertainment media information related to films, documentaries, television programs, and animated content – including cast, production crew and the platforms they are available in.
 
 This is all achieved using TheMovieDb's REST API to gather required data for user consuption via a sleek, modern and clean user interface. All credit goes to TMDb for this amazing fully free (as of this publication) API! 
