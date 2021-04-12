@@ -31432,6 +31432,24 @@ select {
           animation: bounce 1s infinite;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(17, 24, 39);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(73, 89, 124);
+  border-radius: 100px;
+  transform: scale(0.85)
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -184466,4 +184484,3 @@ select {
             animation: bounce 1s infinite;
   }
 }
-
