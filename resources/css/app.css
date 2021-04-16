@@ -16,3 +16,19 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+  .search-results {
+    border-radius: 4px;
+  }
+  .search-results ul li {
+    border-bottom: 1px solid rgb(55, 65, 81);
+  }
+  .search-results ul li:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .search-results ul li:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom: transparent !important;
+  }

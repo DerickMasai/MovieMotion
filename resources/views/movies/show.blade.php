@@ -8,7 +8,7 @@
 
     <section class="px-10 md:px-24 lg:px-32 pb-10 mt-16 grid grid-cols-1 md:grid-cols-3 md:gap-x-12 border-b border-solid border-gray-800">
         <div class="col-start-1 h-96 w-full mb-8 md:mb-0">
-            <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $movie['poster_path'] }}" alt="{{ $movie['title'] . ' movie poster' }}" class="w-full h-full object-cover">
+            <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $movie['poster_path'] }}" alt="{{ $movie['title'] . ' movie poster' }}" class="w-full h-full object-cover ring-2 ring-pink-500 ring-opacity-50 ring-offset-4 ring-offset-gray-900">
         </div>
         <div class="md:col-start-2 md:col-end-4 h-full w-full flex flex-col">
             <h2 class="tt700 text-white text-4xl">{{ $movie['title'] }}</h2>
@@ -78,11 +78,11 @@
             Cast
         </h3>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-x-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             @foreach ($movie['credits']['cast'] as $cast)
                 @if ($loop->index < 5)
                     <div class="flex flex-col">
-                        <div class="h-52 w-full">
+                        <div class="h-96 md:h-52 w-full">
                             @if ($cast['profile_path'])
                                 <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $cast['profile_path'] }}" alt="{{ $cast['name'] . ' portrait' }}" class="w-full h-full object-cover">
                             @else
@@ -105,7 +105,7 @@
         </div>
     </section>
 
-    <section class="px-10 md:px-24 lg:px-32 mt-8 pb-10 flex flex-col">
+    <section class="px-10 md:px-24 lg:px-32 my-8 pb-10 flex flex-col">
         <h3 class="tt700 text-white text-3xl mb-6">
             Images
         </h3>
@@ -113,7 +113,7 @@
         <div
         x-data="{ isOpen: false, image: '', alt: '' }"
         @keydown.escape.window="isOpen = false"
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8">
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             @foreach ($movie['images']['backdrops'] as $image)
                 @if ($loop->index < 3)
                     <div class="flex flex-col">
@@ -121,11 +121,11 @@
                         @click.prevent="
                             isOpen = true 
                             image='{{ 'https://image.tmdb.org/t/p/original/' . $image['file_path'] }}' 
-                            alt='{{ $movie['title'] . ' screenshot' }}'" href="#" class="h-48 w-full">
+                            alt='{{ $movie['title'] . ' screenshot' }}'" href="#" class="h-96 md:h-48 w-full">
                             @if ($image['file_path'])
-                                <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $image['file_path'] }}" alt="{{ $movie['title'] . ' screenshot' }}" class="w-full h-full object-cover">
+                                <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $image['file_path'] }}" alt="{{ $movie['title'] . ' screenshot' }}" class="w-full h-full object-cover ring-1 ring-yellow-500 ring-opacity-20 ring-offset-2 ring-offset-gray-900 transition ease-in-out duration-200 hover:ring-opacity-100">
                             @else
-                                <img src="https://via.placeholder.com/300x250?text=300x250+MPU" alt="Image placeholder" class="w-full h-full object-cover">
+                                <img src="https://via.placeholder.com/300x250?text=300x250+MPU" alt="Image placeholder" class="w-full h-full object-cover ring-1 ring-yellow-500 ring-opacity-20 ring-offset-2 ring-offset-gray-900 transition ease-in-out duration-200 hover:ring-opacity-100">
                             @endif
                         </a>
                     </div>

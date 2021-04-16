@@ -3,7 +3,7 @@
         <input 
         wire:model.debounce.500ms="search" 
         type="text" 
-        class="input-search-lg w-64 py-1 pr-3 pl-8 bg-gray-700 rounded-3xl capitalize focus:outline-none" 
+        class="input-search-lg w-64 py-1 pr-3 pl-8 bg-gray-800 border-1 border-solid border-gray-700 rounded-3xl capitalize transition ease-in-out duration-200 focus:border-gray-700 ring-2 ring-offset-4 ring-offset-gray-900 ring-transparent ring-opacity-50 focus:ring-yellow-500 focus:outline-none" 
         placeholder="Search" 
         x-ref="search"
         @keydown.window = "
@@ -24,7 +24,7 @@
     @if (strlen($search) >= 2)
         
         <div 
-        class="search-results w-full mt-2 absolute bg-gray-700 z-30" 
+        class="search-results w-full mt-3 absolute bg-gray-800 ring-1 ring-offset-2 ring-offset-gray-900 ring-yellow-500 z-30" 
         x-show.transition.scale="isOpen">
             <ul class="list-none flex flex-col">
                 {{-- Check if there are results --}}
@@ -33,7 +33,7 @@
                     @foreach ($searchResults as $result)
                         <li class="transition ease-in-out duration-200 hover:bg-gray-600">
                             <a 
-                            href="{{ route('movies.show', $result['id']) }}" class="grid grid-cols-12 gap-x-2 py-3 px-3 border-b border-solid border-gray-600 pro400 text-gray-300 text-sm items-center transition ease-in-out duration-200 hover:text-white"
+                            href="{{ route('movies.show', $result['id']) }}" class="grid grid-cols-12 gap-x-2 py-3 px-3 pro400 text-gray-300 text-sm items-center transition ease-in-out duration-200 hover:text-white"
                             @if ($loop->last)
                                 @keydown.tab="isOpen = false"
                             @endif>

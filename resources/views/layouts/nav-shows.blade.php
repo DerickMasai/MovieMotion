@@ -1,4 +1,4 @@
-<a href="{{ route('movies.index') }}" class="logo tt700 text-lg font-bold text-white flex flex-row">
+<a href="{{ route('movies.index') }}" class="mt-1.5 logo tt700 text-lg font-bold text-white flex flex-row">
     <i class="fas fa-video mt-0.5 mr-1 text-yellow-600"></i>
     <h1 class="logo"> Movie<span>Motion</span></h1>
 </a>
@@ -16,13 +16,15 @@
     <livewire:shows-search-dropdown>
 </ul>
 
-<button type="button" class="menu-button list-none flex flex-col ml-auto md:hidden focus:outline-none">
+{{-- Responsive Menu trigger --}}
+<button type="button" class="menu-button mt-2 list-none flex flex-col ml-auto md:hidden focus:outline-none" @click="responsiveNav = true">
     <li class="h-px w-8 bg-white"></li>
-    <li class="my-1.25 ml-auto h-px w-6 bg-white"></li>
+    <li class="my-1.5 ml-auto h-px w-6 bg-white"></li>
     <li class="ml-auto h-px w-4 bg-white"></li>
 </button>
 
-<section class="fullscreen-menu px-20 py-5 h-screen w-full fixed top-0 left-0 bg-gray-900 bg-opacity-90 text-white list-none flex flex-col z-50 pointer-events-none opacity-0 transition ease-in duration-300">
+{{-- Responsive Nav - For smaller screens --}}
+<section class="fullscreen-menu px-20 py-5 h-screen w-full fixed top-0 left-0 bg-gray-900 bg-opacity-90 text-white list-none flex flex-col z-50 pointer-events-none opacity-0 transition ease-in duration-300" x-show="responsiveNav">
     <div class="m-0 flex flex-row">
         <ul class="tt300 flex flex-row list-none text-sm text-white justify-center items-center">
             <li class="">

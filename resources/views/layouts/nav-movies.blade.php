@@ -1,4 +1,4 @@
-<a href="{{ route('movies.index') }}" class="logo tt700 text-lg font-bold text-white flex flex-row">
+<a href="{{ route('movies.index') }}" class="mt-1.5 logo tt700 text-lg font-bold text-white flex flex-row">
     <i class="fas fa-video mt-0.5 mr-1 text-yellow-600"></i>
     <h1 class="logo"> Movie<span>Motion</span></h1>
 </a>

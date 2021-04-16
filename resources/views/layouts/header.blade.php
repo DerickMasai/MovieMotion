@@ -21,8 +21,7 @@ x-data="{isOpen: false}"
 @keydown.escape.window="isOpen = false"
 >
     <div class="secondary-shadow w-1/2 h-full p-16 justify-center flex flex-col z-10">
-        <small class="tt300 text-gray-300
-        ">
+        <small class="tt300 text-gray-300">
             @foreach ($headerMovie['genre_ids'] as $genre)
                 {{$genres->get($genre)}}@if(!$loop->last),@endif
             @endforeach

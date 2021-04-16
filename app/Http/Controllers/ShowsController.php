@@ -14,25 +14,29 @@ class ShowsController extends Controller
      */
     public function index()
     {
-        $popularShows = Http::withToken(config('services.tmdb.token'))
-            ->get(config('services.tmdb.tmdb_base_url') . '/tv/popular')
-            ->json()['results'];
+        $popularShows = collect(Http::withToken(config('services.tmdb.token'))
+        ->get(config('services.tmdb.tmdb_base_url') . '/tv/popular')
+        ->json()['results'])->take(10);
 
-        $airingToday = Http::withToken(config('services.tmdb.token'))
-            ->get(config('services.tmdb.tmdb_base_url') . '/tv/airing_today')
-            ->json()['results'];
+        $airingToday = collect(Http::withToken(config('services.tmdb.token'))
+        ->get(config('services.tmdb.tmdb_base_url') . '/tv/airing_today')
+        ->json()['results'])->take(2);
+
+        $currentlyAiring = collect(Http::withToken(config('services.tmdb.token'))
+            ->get(config('services.tmdb.tmdb_base_url') . '/tv/on_the_air')
+            ->json()['results'])->take(10);
 
         $genreArray = Http::withToken(config('services.tmdb.token'))
         ->get(config('services.tmdb.tmdb_base_url') . '/genre/tv/list')
         ->json()['genres'];
 
-        $randomNumber = mt_rand(0, 19);
+        $randomNumber = mt_rand(0, 9);
 
         $headerShow = $popularShows[$randomNumber];
 
-        $headerShowCast = Http::withToken(config('services.tmdb.token'))
+        $headerShowCast = collect(Http::withToken(config('services.tmdb.token'))
         ->get(config('services.tmdb.tmdb_base_url') . '/tv/' . $headerShow['id'] . '/credits')
-        ->json();
+        ->json())->take(6);
 
         $headerTrailer = Http::withToken(config('services.tmdb.token'))
         ->get(config('services.tmdb.tmdb_base_url') . '/tv/' . $headerShow['id'] . '/videos')
@@ -47,7 +51,8 @@ class ShowsController extends Controller
                 return [$genre['id'] => $genre['name']];
         });
             
-        return view('tv-shows.index', ['popularShows' => $popularShows, 'airingToday' => $airingToday, 'genres' => $genres, 'headerShow' => $headerShow, 'headerShowCast' => $headerShowCast, 'headerTrailer' => $headerTrailer, 'headerShowProviders' => $headerShowProviders]);
+        return view('tv-shows.index', ['popularShows' => $popularShows,
+        'airingToday' => $airingToday, 'currentlyAiring' => $currentlyAiring, 'genres' => $genres, 'headerShow' => $headerShow, 'headerShowCast' => $headerShowCast, 'headerTrailer' => $headerTrailer, 'headerShowProviders' => $headerShowProviders]);
     }
 
     /**
