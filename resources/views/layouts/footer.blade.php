@@ -12,5 +12,5 @@
         </li>
     </ul>
     
-    <span class="tt400 text-gray-500 mt-4 mx-auto">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="https://derickmasai.com" target="_blank" rel="noopener noreferrer" class="border-b border-solid border-gray-800">Derick Masai <sup><i class="fas fa-external-link-alt transform scale-75"></i></sup></a>. Made fully open-source with <i class="fas fa-heart text-red-500 text-xs"></i> using Laravel & <a href="https://themoviedb.org" target="_blank" rel="noopener noreferrer" class="border-b border-solid border-gray-800">TMDb</a>.</span>
+    <span class="tt400 text-gray-500 mt-4 mx-auto">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="https://derickmasai.com" target="_blank" rel="noopener noreferrer" class="border-b border-dashed" style="border-color: rgb(9, 235, 175);">Derick Masai</a>. Made fully open-source with <i class="fas fa-heart text-xs" style="color: rgb(9, 235, 175);"></i> using Laravel & <a href="https://themoviedb.org" target="_blank" rel="noopener noreferrer" class="border-b border-dashed border-gray-800">TMDb</a>.</span>
 </footer>

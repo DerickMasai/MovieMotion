@@ -24259,6 +24259,66 @@ select {
   --tw-ring-opacity: 1;
 }
 
+.group:hover .group-hover\:ring-opacity-0 {
+  --tw-ring-opacity: 0;
+}
+
+.group:hover .group-hover\:ring-opacity-5 {
+  --tw-ring-opacity: 0.05;
+}
+
+.group:hover .group-hover\:ring-opacity-10 {
+  --tw-ring-opacity: 0.1;
+}
+
+.group:hover .group-hover\:ring-opacity-20 {
+  --tw-ring-opacity: 0.2;
+}
+
+.group:hover .group-hover\:ring-opacity-25 {
+  --tw-ring-opacity: 0.25;
+}
+
+.group:hover .group-hover\:ring-opacity-30 {
+  --tw-ring-opacity: 0.3;
+}
+
+.group:hover .group-hover\:ring-opacity-40 {
+  --tw-ring-opacity: 0.4;
+}
+
+.group:hover .group-hover\:ring-opacity-50 {
+  --tw-ring-opacity: 0.5;
+}
+
+.group:hover .group-hover\:ring-opacity-60 {
+  --tw-ring-opacity: 0.6;
+}
+
+.group:hover .group-hover\:ring-opacity-70 {
+  --tw-ring-opacity: 0.7;
+}
+
+.group:hover .group-hover\:ring-opacity-75 {
+  --tw-ring-opacity: 0.75;
+}
+
+.group:hover .group-hover\:ring-opacity-80 {
+  --tw-ring-opacity: 0.8;
+}
+
+.group:hover .group-hover\:ring-opacity-90 {
+  --tw-ring-opacity: 0.9;
+}
+
+.group:hover .group-hover\:ring-opacity-95 {
+  --tw-ring-opacity: 0.95;
+}
+
+.group:hover .group-hover\:ring-opacity-100 {
+  --tw-ring-opacity: 1;
+}
+
 .focus-within\:ring-opacity-0:focus-within {
   --tw-ring-opacity: 0;
 }
@@ -54949,6 +55009,66 @@ select {
     --tw-ring-opacity: 1;
   }
 
+  .group:hover .sm\:group-hover\:ring-opacity-0 {
+    --tw-ring-opacity: 0;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-5 {
+    --tw-ring-opacity: 0.05;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-10 {
+    --tw-ring-opacity: 0.1;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-20 {
+    --tw-ring-opacity: 0.2;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-25 {
+    --tw-ring-opacity: 0.25;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-30 {
+    --tw-ring-opacity: 0.3;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-40 {
+    --tw-ring-opacity: 0.4;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-50 {
+    --tw-ring-opacity: 0.5;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-60 {
+    --tw-ring-opacity: 0.6;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-70 {
+    --tw-ring-opacity: 0.7;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-75 {
+    --tw-ring-opacity: 0.75;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-80 {
+    --tw-ring-opacity: 0.8;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-90 {
+    --tw-ring-opacity: 0.9;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-95 {
+    --tw-ring-opacity: 0.95;
+  }
+
+  .group:hover .sm\:group-hover\:ring-opacity-100 {
+    --tw-ring-opacity: 1;
+  }
+
   .sm\:focus-within\:ring-opacity-0:focus-within {
     --tw-ring-opacity: 0;
   }
@@ -85553,6 +85673,66 @@ select {
   }
 
   .md\:ring-opacity-100 {
+    --tw-ring-opacity: 1;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-0 {
+    --tw-ring-opacity: 0;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-5 {
+    --tw-ring-opacity: 0.05;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-10 {
+    --tw-ring-opacity: 0.1;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-20 {
+    --tw-ring-opacity: 0.2;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-25 {
+    --tw-ring-opacity: 0.25;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-30 {
+    --tw-ring-opacity: 0.3;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-40 {
+    --tw-ring-opacity: 0.4;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-50 {
+    --tw-ring-opacity: 0.5;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-60 {
+    --tw-ring-opacity: 0.6;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-70 {
+    --tw-ring-opacity: 0.7;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-75 {
+    --tw-ring-opacity: 0.75;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-80 {
+    --tw-ring-opacity: 0.8;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-90 {
+    --tw-ring-opacity: 0.9;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-95 {
+    --tw-ring-opacity: 0.95;
+  }
+
+  .group:hover .md\:group-hover\:ring-opacity-100 {
     --tw-ring-opacity: 1;
   }
 
@@ -116163,6 +116343,66 @@ select {
     --tw-ring-opacity: 1;
   }
 
+  .group:hover .lg\:group-hover\:ring-opacity-0 {
+    --tw-ring-opacity: 0;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-5 {
+    --tw-ring-opacity: 0.05;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-10 {
+    --tw-ring-opacity: 0.1;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-20 {
+    --tw-ring-opacity: 0.2;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-25 {
+    --tw-ring-opacity: 0.25;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-30 {
+    --tw-ring-opacity: 0.3;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-40 {
+    --tw-ring-opacity: 0.4;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-50 {
+    --tw-ring-opacity: 0.5;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-60 {
+    --tw-ring-opacity: 0.6;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-70 {
+    --tw-ring-opacity: 0.7;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-75 {
+    --tw-ring-opacity: 0.75;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-80 {
+    --tw-ring-opacity: 0.8;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-90 {
+    --tw-ring-opacity: 0.9;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-95 {
+    --tw-ring-opacity: 0.95;
+  }
+
+  .group:hover .lg\:group-hover\:ring-opacity-100 {
+    --tw-ring-opacity: 1;
+  }
+
   .lg\:focus-within\:ring-opacity-0:focus-within {
     --tw-ring-opacity: 0;
   }
@@ -146770,6 +147010,66 @@ select {
     --tw-ring-opacity: 1;
   }
 
+  .group:hover .xl\:group-hover\:ring-opacity-0 {
+    --tw-ring-opacity: 0;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-5 {
+    --tw-ring-opacity: 0.05;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-10 {
+    --tw-ring-opacity: 0.1;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-20 {
+    --tw-ring-opacity: 0.2;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-25 {
+    --tw-ring-opacity: 0.25;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-30 {
+    --tw-ring-opacity: 0.3;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-40 {
+    --tw-ring-opacity: 0.4;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-50 {
+    --tw-ring-opacity: 0.5;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-60 {
+    --tw-ring-opacity: 0.6;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-70 {
+    --tw-ring-opacity: 0.7;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-75 {
+    --tw-ring-opacity: 0.75;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-80 {
+    --tw-ring-opacity: 0.8;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-90 {
+    --tw-ring-opacity: 0.9;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-95 {
+    --tw-ring-opacity: 0.95;
+  }
+
+  .group:hover .xl\:group-hover\:ring-opacity-100 {
+    --tw-ring-opacity: 1;
+  }
+
   .xl\:focus-within\:ring-opacity-0:focus-within {
     --tw-ring-opacity: 0;
   }
@@ -177374,6 +177674,66 @@ select {
   }
 
   .\32xl\:ring-opacity-100 {
+    --tw-ring-opacity: 1;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-0 {
+    --tw-ring-opacity: 0;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-5 {
+    --tw-ring-opacity: 0.05;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-10 {
+    --tw-ring-opacity: 0.1;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-20 {
+    --tw-ring-opacity: 0.2;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-25 {
+    --tw-ring-opacity: 0.25;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-30 {
+    --tw-ring-opacity: 0.3;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-40 {
+    --tw-ring-opacity: 0.4;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-50 {
+    --tw-ring-opacity: 0.5;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-60 {
+    --tw-ring-opacity: 0.6;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-70 {
+    --tw-ring-opacity: 0.7;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-75 {
+    --tw-ring-opacity: 0.75;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-80 {
+    --tw-ring-opacity: 0.8;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-90 {
+    --tw-ring-opacity: 0.9;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-95 {
+    --tw-ring-opacity: 0.95;
+  }
+
+  .group:hover .\32xl\:group-hover\:ring-opacity-100 {
     --tw-ring-opacity: 1;
   }
 

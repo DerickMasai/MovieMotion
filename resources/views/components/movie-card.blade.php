@@ -1,6 +1,6 @@
-<div class="h-auto w-full flex flex-col text-white text-sm">
-    <a href="{{ route('movies.show', $movie['id']) }}" class="h-52 w-full bg-gray-800 transition ease-in-out duration-300 hover:opacity-75 ">
-        <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $movie['poster_path'] }}" alt="{{ $movie['title'] . ' movie poster' }}" class="w-full h-full object-cover">
+<div class="h-auto w-full flex flex-col text-white text-sm group">
+    <a href="{{ route('movies.show', $movie['id']) }}" class="h-96 md:h-52 w-full bg-gray-800 transition ease-in-out duration-300 hover:opacity-75 ">
+        <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $movie['poster_path'] }}" alt="{{ $movie['title'] . ' movie poster' }}" class="w-full h-full rounded-md object-cover ring-1 ring-yellow-500 ring-opacity-20 ring-offset-2 ring-offset-gray-900 transition ease-in-out duration-200 group-hover:ring-opacity-100">
     </a>
     <a href="{{ route('movies.show', $movie['id']) }}" class="tt600 mt-2 mb-1">{{ $movie['title'] }}</a>
     <div class="tt300 text-xs mb-1">

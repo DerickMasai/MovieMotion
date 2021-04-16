@@ -14,13 +14,17 @@ class MoviesController extends Controller
      */
     public function index()
     {
-        $popularMovies = Http::withToken(config('services.tmdb.token'))
+        $popularMovies = collect(Http::withToken(config('services.tmdb.token'))
         ->get(config('services.tmdb.tmdb_base_url') . '/movie/popular')
-        ->json()['results'];
+        ->json()['results'])->take(10);
 
-        $nowPlayingMovies = Http::withToken(config('services.tmdb.token'))
+        $nowPlayingMovies = collect(Http::withToken(config('services.tmdb.token'))
         ->get(config('services.tmdb.tmdb_base_url') . '/movie/now_playing')
-        ->json()['results'];
+        ->json()['results'])->take(10);
+
+        $upcomingMovies = collect(Http::withToken(config('services.tmdb.token'))
+        ->get(config('services.tmdb.tmdb_base_url') . '/movie/upcoming')
+        ->json()['results'])->take(2);
 
         $genreArray = Http::withToken(config('services.tmdb.token'))
         ->get(config('services.tmdb.tmdb_base_url') . '/genre/movie/list')
@@ -31,7 +35,7 @@ class MoviesController extends Controller
                 return [$genre['id'] => $genre['name']];
         });
 
-        $randomNumber = mt_rand(0, 19);
+        $randomNumber = mt_rand(0, 9);
 
         $headerMovie = $popularMovies[$randomNumber];
 
@@ -48,6 +52,7 @@ class MoviesController extends Controller
         ->json()['results'];
 
         return view('movies.index', ['popularMovies' => $popularMovies,
+        'upcomingMovies' => $upcomingMovies,
         'nowPlayingMovies' => $nowPlayingMovies,
         'genres' => $genres, 'headerMovie' => $headerMovie, 'headerMovieCast' => $headerMovieCast, 'headerTrailer' => $headerTrailer, 'headerMovieProviders' => $headerMovieProviders]);
     }
@@ -93,8 +98,6 @@ class MoviesController extends Controller
             ->mapWithKeys(function($genre) {
                 return [$genre['id'] => $genre['name']];
         });
-
-        // dump($movie);
 
         return view('movies.show', ['movie' => $movie, 'genres' => $genres]);
     }
