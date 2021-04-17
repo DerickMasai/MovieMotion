@@ -1,9 +1,9 @@
 <div 
 x-show.transition.scale="isOpen"
 style="background-color: rgba(0, 0, 0, .5);"
-class="fixed w-full h-full top-0 left-0 flex items-center shadow-lg">
+class="fixed w-full h-screen top-0 left-0 flex items-center shadow-lg">
     <div class="container mx-auto lg:px-32 rounded-lg">
-        <div class="bg-gray-900 rounded"  @click.away="isOpen = false">
+        <div class="h-4/5 bg-gray-900 rounded"  @click.away="isOpen = false">
             <div class="flex justify-end pr-4 pt-2">
                 <button
                     @click="isOpen = false" 

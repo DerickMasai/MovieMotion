@@ -6,9 +6,11 @@ class="fixed w-full h-full top-0 left-0 flex items-center shadow-lg">
     <div class="container mx-auto lg:px-32 rounded-lg">
         <div class="bg-gray-900 rounded">
             <div class="flex justify-end pr-4 pt-2">
-                <button
-                @click="isOpen = false" 
-                type="button" class="text-3xl text-white leading-none transition ease-linear duration-150 focus:outline-none hover:text-gray-300">&times;</button>
+                
+                <button type="button" class="menu-close-button list-none ml-auto relative focus:outline-none" @click="isOpen = false">
+                    <li class="h-px w-6 bg-white relative transform rotate-45 top-0 left-0"></li>
+                    <li class="h-px w-6 bg-white relative transform -rotate-45 top-0 left-0"></li>
+                </button>
             </div>
             <div class="modal-body p-8">
                 <div 

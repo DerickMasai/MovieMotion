@@ -2,15 +2,16 @@
 
 @section('content')
 
-    <nav class="px-32 py-5 m-0 border-b border-solid border-gray-800 flex flex-row" x-data="{responsiveNav : false}">
-        @include('layouts.nav-shows')
-    </nav>
+    @include('layouts.nav-shows')
 
     @include('layouts.header-shows')
 
     {{-- Popular --}}
-    <section class="my-16 px-8 md:px-32 flex flex-col">
-        <h2 class="font-bold uppercase text-md tracking-wide text-yellow-600 pro700">Popular</h2>
+    <section class="my-16 px-8 md:px-16 lg:px-32 flex flex-col">
+        <h2 class="gte700 uppercase text-yellow-500 text-md mb-6 mr-auto relative">
+            Popular
+            <div class="h-0.5 w-4 absolute -bottom-1 left-0 bg-pink-500 bg-opacity-75 rounded-full"></div>
+        </h2>
 
         <div class="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mt-6 gap-y-12 md:gap-8">
 
@@ -21,10 +22,11 @@
         </div>
     </section>
 
-    {{-- Airing Today --}}
-    <section class="my-16 px-8 md:px-32 flex flex-col">
-        <h2 class="font-bold uppercase text-md tracking-wide text-yellow-600 pro800">
-            Showing Today
+    {{-- Live Today --}}
+    <section class="my-16 px-8 md:px-16 lg:px-32 flex flex-col">
+        <h2 class="gte700 uppercase text-yellow-500 text-md mb-6 mr-auto relative">
+            Live Today
+            <div class="h-0.5 w-4 absolute -bottom-1 left-0 bg-pink-500 bg-opacity-75 rounded-full"></div>
         </h2>
 
         <div class="w-full mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -47,8 +49,11 @@
     </section>
 
     {{-- Currently Airing --}}
-    <section class="my-16 px-8 md:px-32 flex flex-col">
-        <h2 class="font-bold uppercase text-md tracking-wide text-yellow-600 pro700">On Air</h2>
+    <section class="my-16 px-8 md:px-16 lg:px-32 flex flex-col">
+        <h2 class="gte700 uppercase text-yellow-500 text-md mb-6 mr-auto relative">
+            Currently Airing
+            <div class="h-0.5 w-4 absolute -bottom-1 left-0 bg-pink-500 bg-opacity-75 rounded-full"></div>
+        </h2>
 
         <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-6 gap-y-12 md:gap-8">
 

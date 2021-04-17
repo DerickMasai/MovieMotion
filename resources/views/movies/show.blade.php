@@ -2,9 +2,7 @@
 
 @section('content')
 
-    <nav class="px-32 py-5 m-0 border-b border-solid border-gray-800 flex flex-row">
-        @include('layouts.nav-movies')
-    </nav>
+    @include('layouts.nav-movies')
 
     <section class="px-10 md:px-24 lg:px-32 pb-10 mt-16 grid grid-cols-1 md:grid-cols-3 md:gap-x-12 border-b border-solid border-gray-800">
         <div class="col-start-1 h-96 w-full mb-8 md:mb-0">
@@ -73,6 +71,7 @@
         </div>
     </section>
 
+    {{-- Cast --}}
     <section class="px-10 md:px-24 lg:px-32 mt-8 pb-10 border-b border-solid border-gray-800 flex flex-col">
         <h3 class="tt700 text-white text-3xl mb-6">
             Cast
@@ -105,6 +104,7 @@
         </div>
     </section>
 
+    {{-- Images --}}
     <section class="px-10 md:px-24 lg:px-32 my-8 pb-10 flex flex-col">
         <h3 class="tt700 text-white text-3xl mb-6">
             Images
@@ -123,9 +123,9 @@
                             image='{{ 'https://image.tmdb.org/t/p/original/' . $image['file_path'] }}' 
                             alt='{{ $movie['title'] . ' screenshot' }}'" href="#" class="h-96 md:h-48 w-full">
                             @if ($image['file_path'])
-                                <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $image['file_path'] }}" alt="{{ $movie['title'] . ' screenshot' }}" class="w-full h-full object-cover ring-1 ring-yellow-500 ring-opacity-20 ring-offset-2 ring-offset-gray-900 transition ease-in-out duration-200 hover:ring-opacity-100">
+                                <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $image['file_path'] }}" alt="{{ $movie['title'] . ' screenshot' }}" class="w-full h-full object-cover ring-1 ring-yellow-500 ring-opacity-40 ring-offset-2 ring-offset-gray-900 transition ease-in-out duration-200 hover:ring-opacity-100">
                             @else
-                                <img src="https://via.placeholder.com/300x250?text=300x250+MPU" alt="Image placeholder" class="w-full h-full object-cover ring-1 ring-yellow-500 ring-opacity-20 ring-offset-2 ring-offset-gray-900 transition ease-in-out duration-200 hover:ring-opacity-100">
+                                <img src="https://via.placeholder.com/300x250?text=300x250+MPU" alt="Image placeholder" class="w-full h-full object-cover ring-1 ring-yellow-500 ring-opacity-40 ring-offset-2 ring-offset-gray-900 transition ease-in-out duration-200 hover:ring-opacity-100">
                             @endif
                         </a>
                     </div>
@@ -138,6 +138,19 @@
 
             {{-- Image Modal --}}
             <x-image-modal />
+        </div>
+    </section>
+
+    {{-- Recommended --}}
+    <section class="px-10 md:px-24 lg:px-32 mt-8 pb-10 border-b border-solid border-gray-800 flex flex-col">
+        <h3 class="tt700 text-white text-3xl mb-6">
+            Recommended
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            @foreach ($recommendations as $movie)
+                <x-movie-card :movie="$movie" :genres="$genres" />
+            @endforeach
         </div>
     </section>
 @endsection

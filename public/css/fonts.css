@@ -1,156 +1,453 @@
 @font-face {
     font-family: TTThin;
     src: url("../fonts/TTCommons/Thin.ttf");
-}
-@font-face {
+  }
+  @font-face {
     font-family: TTExtraLight;
     src: url("../fonts/TTCommons/ExtraLight.ttf");
-}
-@font-face {
+  }
+  @font-face {
     font-family: TTLight;
     src: url("../fonts/TTCommons/Light.ttf");
-}
-@font-face {
+  }
+  @font-face {
     font-family: TTRegular;
     src: url("../fonts/TTCommons/Regular.ttf");
-}
-@font-face {
+  }
+  @font-face {
     font-family: TTMedium;
     src: url("../fonts/TTCommons/Medium.ttf");
-}
-@font-face {
+  }
+  @font-face {
     font-family: TTSemiBold;
     src: url("../fonts/TTCommons/SemiBold.ttf");
-}
-@font-face {
+  }
+  @font-face {
     font-family: TTBold;
     src: url("../fonts/TTCommons/Bold.ttf");
-}
-@font-face {
+  }
+  @font-face {
     font-family: TTExtraBold;
     src: url("../fonts/TTCommons/ExtraBold.ttf");
-}
-@font-face {
+  }
+  @font-face {
     font-family: TTBlack;
     src: url("../fonts/TTCommons/Black.ttf");
-}
-
-.tt100 {
+  }
+  
+  .tt100 {
     font-family: "TTThin", Helvetica, Arial, sans-serif;
-}
-.tt200 {
+  }
+  .tt200 {
     font-family: "TTExtraLight", Helvetica, Arial, sans-serif;
-}
-.tt300 {
+  }
+  .tt300 {
     font-family: "TTLight", Helvetica, Arial, sans-serif;
-}
-.tt400 {
+  }
+  .tt400 {
     font-family: "TTRegular", Helvetica, Arial, sans-serif;
-}
-.tt500 {
+  }
+  .tt500 {
     font-family: "TTMedium", Helvetica, Arial, sans-serif;
-}
-.tt600 {
+  }
+  .tt600 {
     font-family: "TTSemiBold", Helvetica, Arial, sans-serif;
-}
-.tt700 {
+  }
+  .tt700 {
     font-family: "TTBold", Helvetica, Arial, sans-serif;
-}
-.tt800 {
+  }
+  .tt800 {
     font-family: "TTExtraBold", Helvetica, Arial, sans-serif;
-}
-.tt900 {
+  }
+  .tt900 {
     font-family: "TTBlack", Helvetica, Arial, sans-serif;
-}
-
-/* ************************************* */
-/* ************************************* */
-/* ************************************* */
-
-
-@font-face {
-    font-family: ProximaNova-Thin;
+  }
+  
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  
+  @font-face {
+    font-family: GTEestiProDisplayUltraLight;
+    src: url("../fonts/GTEestiProDisplay/UltraLight.ttf");
+  }
+  @font-face {
+    font-family: GTEestiProDisplayThin;
+    src: url("../fonts/GTEestiProDisplay/Thin.ttf");
+  }
+  @font-face {
+    font-family: GTEestiProDisplayLight;
+    src: url("../fonts/GTEestiProDisplay/Light.ttf");
+  }
+  @font-face {
+    font-family: GTEestiProDisplayRegular;
+    src: url("../fonts/GTEestiProDisplay/Regular.ttf");
+  }
+  @font-face {
+    font-family: GTEestiProDisplayMedium;
+    src: url("../fonts/GTEestiProDisplay/Medium.ttf");
+  }
+  @font-face {
+    font-family: GTEestiProDisplayBold;
+    src: url("../fonts/GTEestiProDisplay/Bold.ttf");
+  }
+  @font-face {
+    font-family: GTEestiProDisplayUltraBold;
+    src: url("../fonts/GTEestiProDisplay/UltraBold.ttf");
+  }
+  
+  .gte100 {
+    font-family: "GTEestiProDisplayUltraLight", Helvetica, Arial, sans-serif;
+  }
+  .gte200 {
+    font-family: "GTEestiProDisplayThin", Helvetica, Arial, sans-serif;
+  }
+  .gte300 {
+    font-family: "GTEestiProDisplayLight", Helvetica, Arial, sans-serif;
+  }
+  .gte400 {
+    font-family: "GTEestiProDisplayRegular", Helvetica, Arial, sans-serif;
+  }
+  .gte500 {
+    font-family: "GTEestiProDisplayMedium", Helvetica, Arial, sans-serif;
+  }
+  .gte700 {
+    font-family: "GTEestiProDisplayBold", Helvetica, Arial, sans-serif;
+  }
+  .gte900 {
+    font-family: "GTEestiProDisplayUltraBold", Helvetica, Arial, sans-serif;
+  }
+  
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  
+  @font-face {
+    font-family: ProximaNovaThin;
     src: url("../fonts/ProximaNova/Thin.ttf");
-}
-@font-face {
-    font-family: ProximaNova-Light;
+  }
+  @font-face {
+    font-family: ProximaNovaLight;
     src: url("../fonts/ProximaNova/Light.ttf");
-}
-@font-face {
-    font-family: ProximaNova-Regular;
+  }
+  @font-face {
+    font-family: ProximaNovaRegular;
     src: url("../fonts/ProximaNova/Regular.ttf");
-}
-@font-face {
-    font-family: ProximaNova-Medium;
+  }
+  @font-face {
+    font-family: ProximaNovaMedium;
     src: url("../fonts/ProximaNova/Medium.ttf");
-}
-@font-face {
-    font-family: ProximaNova-SemiBold;
+  }
+  @font-face {
+    font-family: ProximaNovaSemiBold;
     src: url("../fonts/ProximaNova/SemiBold.ttf");
-}
-@font-face {
-    font-family: ProximaNova-Bold;
+  }
+  @font-face {
+    font-family: ProximaNovaBold;
     src: url("../fonts/ProximaNova/Bold.ttf");
-}
-@font-face {
-    font-family: ProximaNova-ExtraBold;
+  }
+  @font-face {
+    font-family: ProximaNovaExtraBold;
     src: url("../fonts/ProximaNova/ExtraBold.ttf");
-}
-@font-face {
-    font-family: ProximaNova-Black;
+  }
+  @font-face {
+    font-family: ProximaNovaBlack;
     src: url("../fonts/ProximaNova/Black.ttf");
-}
-
-.pro100 {
-    font-family: "ProximaNova-Thin", Helvetica, Arial, sans-serif;
-}
-.pro300 {
-    font-family: "ProximaNova-Light", Helvetica, Arial, sans-serif;
-}
-.pro400 {
-    font-family: "ProximaNova-Regular", Helvetica, Arial, sans-serif;
-}
-.pro500 {
-    font-family: "ProximaNova-Medium", Helvetica, Arial, sans-serif;
-}
-.pro600 {
-    font-family: "ProximaNova-SemiBold", Helvetica, Arial, sans-serif;
-}
-.pro700 {
-    font-family: "ProximaNova-Bold", Helvetica, Arial, sans-serif;
-}
-.pro800 {
-    font-family: "ProximaNova-ExtraBold", Helvetica, Arial, sans-serif;
-}
-.pro900 {
-    font-family: "ProximaNova-Black", Helvetica, Arial, sans-serif;
-}
-
-
-/* ************************************* */
-/* ************************************* */
-/* ************************************* */
-
-
-@font-face {
-    font-family: Quicksand-Light;
+  }
+  
+  .pro100 {
+    font-family: "ProximaNovaThin", Helvetica, Arial, sans-serif;
+  }
+  .pro300 {
+    font-family: "ProximaNovaLight", Helvetica, Arial, sans-serif;
+  }
+  .pro400 {
+    font-family: "ProximaNovaRegular", Helvetica, Arial, sans-serif;
+  }
+  .pro500 {
+    font-family: "ProximaNovaMedium", Helvetica, Arial, sans-serif;
+  }
+  .pro600 {
+    font-family: "ProximaNovaSemiBold", Helvetica, Arial, sans-serif;
+  }
+  .pro700 {
+    font-family: "ProximaNovaBold", Helvetica, Arial, sans-serif;
+  }
+  .pro800 {
+    font-family: "ProximaNovaExtraBold", Helvetica, Arial, sans-serif;
+  }
+  .pro900 {
+    font-family: "ProximaNovaBlack", Helvetica, Arial, sans-serif;
+  }
+  
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  
+  @font-face {
+    font-family: QanelasThin;
+    src: url("../fonts/Qanelas/Thin.ttf");
+  }
+  @font-face {
+    font-family: QanelasExtraLight;
+    src: url("../fonts/Qanelas/ExtraLight.ttf");
+  }
+  @font-face {
+    font-family: QanelasLight;
+    src: url("../fonts/Qanelas/Light.ttf");
+  }
+  @font-face {
+    font-family: QanelasRegular;
+    src: url("../fonts/Qanelas/Regular.ttf");
+  }
+  @font-face {
+    font-family: QanelasMedium;
+    src: url("../fonts/Qanelas/Medium.ttf");
+  }
+  @font-face {
+    font-family: QanelasSemiBold;
+    src: url("../fonts/Qanelas/SemiBold.ttf");
+  }
+  @font-face {
+    font-family: QanelasBold;
+    src: url("../fonts/Qanelas/Bold.ttf");
+  }
+  @font-face {
+    font-family: QanelasExtraBold;
+    src: url("../fonts/Qanelas/ExtraBold.ttf");
+  }
+  @font-face {
+    font-family: QanelasBlack;
+    src: url("../fonts/Qanelas/Black.ttf");
+  }
+  
+  .qan100 {
+    font-family: "QanelasThin", Helvetica, Arial, sans-serif;
+  }
+  .qan200 {
+    font-family: "QanelasExtraLight", Helvetica, Arial, sans-serif;
+  }
+  .qan300 {
+    font-family: "TTLight", Helvetica, Arial, sans-serif;
+  }
+  .qan400 {
+    font-family: "QanelasRegular", Helvetica, Arial, sans-serif;
+  }
+  .qan500 {
+    font-family: "QanelasMedium", Helvetica, Arial, sans-serif;
+  }
+  .qan600 {
+    font-family: "QanelasSemiBold", Helvetica, Arial, sans-serif;
+  }
+  .qan700 {
+    font-family: "QanelasBold", Helvetica, Arial, sans-serif;
+  }
+  .qan800 {
+    font-family: "QanelasExtraBold", Helvetica, Arial, sans-serif;
+  }
+  .qan900 {
+    font-family: "QanelasBlack", Helvetica, Arial, sans-serif;
+  }
+  
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  
+  @font-face {
+    font-family: ModelicaHairline;
+    src: url("../fonts/Modelica/Hairline.otf");
+  }
+  @font-face {
+    font-family: ModelicaThin;
+    src: url("../fonts/Modelica/Thin.otf");
+  }
+  @font-face {
+    font-family: ModelicaLight;
+    src: url("../fonts/Modelica/Light.otf");
+  }
+  @font-face {
+    font-family: ModelicaRegular;
+    src: url("../fonts/Modelica/Regular.otf");
+  }
+  @font-face {
+    font-family: ModelicaMedium;
+    src: url("../fonts/Modelica/Medium.otf");
+  }
+  @font-face {
+    font-family: ModelicaBold;
+    src: url("../fonts/Modelica/Bold.otf");
+  }
+  @font-face {
+    font-family: ModelicaExtraBold;
+    src: url("../fonts/Modelica/ExtraBold.otf");
+  }
+  @font-face {
+    font-family: ModelicaBlack;
+    src: url("../fonts/Modelica/Black.otf");
+  }
+  
+  .mod100 {
+    font-family: "ModelicaHairline", Helvetica, Arial, sans-serif;
+  }
+  .mod200 {
+    font-family: "ModelicaThin", Helvetica, Arial, sans-serif;
+  }
+  .mod300 {
+    font-family: "ModelicaLight", Helvetica, Arial, sans-serif;
+  }
+  .mod400 {
+    font-family: "ModelicaRegular", Helvetica, Arial, sans-serif;
+  }
+  .mod500 {
+    font-family: "ModelicaMedium", Helvetica, Arial, sans-serif;
+  }
+  .mod700 {
+    font-family: "ModelicaBold", Helvetica, Arial, sans-serif;
+  }
+  .mod800 {
+    font-family: "ModelicaExtraBold", Helvetica, Arial, sans-serif;
+  }
+  .mod900 {
+    font-family: "ModelicaBlack", Helvetica, Arial, sans-serif;
+  }
+  
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  
+  @font-face {
+    font-family: SofiaProThin;
+    src: url("../fonts/SofiaPro/Thin.otf");
+  }
+  @font-face {
+    font-family: SofiaProExtraLight;
+    src: url("../fonts/SofiaPro/ExtraLight.otf");
+  }
+  @font-face {
+    font-family: SofiaProLight;
+    src: url("../fonts/SofiaPro/Light.otf");
+  }
+  @font-face {
+    font-family: SofiaProRegular;
+    src: url("../fonts/SofiaPro/Regular.otf");
+  }
+  @font-face {
+    font-family: SofiaProMedium;
+    src: url("../fonts/SofiaPro/Medium.otf");
+  }
+  @font-face {
+    font-family: SofiaProSemiBold;
+    src: url("../fonts/SofiaPro/SemiBold.otf");
+  }
+  @font-face {
+    font-family: SofiaProBold;
+    src: url("../fonts/SofiaPro/Bold.otf");
+  }
+  @font-face {
+    font-family: SofiaProBlack;
+    src: url("../fonts/SofiaPro/Black.otf");
+  }
+  
+  .sof100 {
+    font-family: "SofiaProThin", Helvetica, Arial, sans-serif;
+  }
+  .sof200 {
+    font-family: "SofiaProExtraLight", Helvetica, Arial, sans-serif;
+  }
+  .sof300 {
+    font-family: "SofiaProLight", Helvetica, Arial, sans-serif;
+  }
+  .sof400 {
+    font-family: "SofiaProRegular", Helvetica, Arial, sans-serif;
+  }
+  .sof500 {
+    font-family: "SofiaProMedium", Helvetica, Arial, sans-serif;
+  }
+  .sof600 {
+    font-family: "SofiaProSemiBold", Helvetica, Arial, sans-serif;
+  }
+  .sof700 {
+    font-family: "SofiaProBold", Helvetica, Arial, sans-serif;
+  }
+  .sof900 {
+    font-family: "SofiaProBlack", Helvetica, Arial, sans-serif;
+  }
+  
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  
+  @font-face {
+    font-family: QuicksandLight;
     src: url("../fonts/Quicksand/Light.otf");
-}
-@font-face {
-    font-family: Quicksand-Regular;
+  }
+  @font-face {
+    font-family: QuicksandRegular;
     src: url("../fonts/Quicksand/Regular.otf");
-}
-@font-face {
-    font-family: Quicksand-Bold;
+  }
+  @font-face {
+    font-family: QuicksandBold;
     src: url("../fonts/Quicksand/Bold.otf");
-}
-
-.qs300 {
-    font-family: "Quicksand-Regular", Helvetica, Arial, sans-serif;
-}
-.qs400 {
-    font-family: "Quicksand-Regular", Helvetica, Arial, sans-serif;
-}
-.qs700 {
-    font-family: "Quicksand-Bold", Helvetica, Arial, sans-serif;
-}
+  }
+  
+  .qs300 {
+    font-family: "QuicksandLight", Helvetica, Arial, sans-serif;
+  }
+  .qs400 {
+    font-family: "QuicksandRegular", Helvetica, Arial, sans-serif;
+  }
+  .qs700 {
+    font-family: "QuicksandBold", Helvetica, Arial, sans-serif;
+  }
+  
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  
+  @font-face {
+    font-family: PlayfairDisplayRegular;
+    src: url("../fonts/PlayfairDisplay/Regular.ttf");
+  }
+  @font-face {
+    font-family: PlayfairDisplayMedium;
+    src: url("../fonts/PlayfairDisplay/Medium.ttf");
+  }
+  @font-face {
+    font-family: PlayfairDisplaySemiBold;
+    src: url("../fonts/PlayfairDisplay/SemiBold.ttf");
+  }
+  @font-face {
+    font-family: PlayfairDisplayBold;
+    src: url("../fonts/PlayfairDisplay/Bold.ttf");
+  }
+  @font-face {
+    font-family: PlayfairDisplayExtraBold;
+    src: url("../fonts/PlayfairDisplay/ExtraBold.ttf");
+  }
+  @font-face {
+    font-family: PlayfairDisplayBlack;
+    src: url("../fonts/PlayfairDisplay/Black.ttf");
+  }
+  
+  .play400 {
+    font-family: "PlayfairDisplayRegular", Helvetica, Arial, sans-serif;
+  }
+  .play500 {
+    font-family: "PlayfairDisplayMedium", Helvetica, Arial, sans-serif;
+  }
+  .play600 {
+    font-family: "PlayfairDisplaySemiBold", Helvetica, Arial, sans-serif;
+  }
+  .play700 {
+    font-family: "PlayfairDisplayBold", Helvetica, Arial, sans-serif;
+  }
+  .play800 {
+    font-family: "PlayfairDisplayExtraBold", Helvetica, Arial, sans-serif;
+  }
+  .play900 {
+    font-family: "PlayfairDisplayBlack", Helvetica, Arial, sans-serif;
+  }
+  
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */
+  /* ************************************************************************************** */

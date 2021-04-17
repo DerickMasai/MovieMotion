@@ -13,4 +13,7 @@
     <span class="w-full mt-4 mx-auto tt400 text-white text-center" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
         {{ $actor['original_name'] }}
     </span>
+    <span class="w-full mx-auto tt300 text-gray-400 text-center" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+        {{ $actor['character'] }}
+    </span>
 </div>

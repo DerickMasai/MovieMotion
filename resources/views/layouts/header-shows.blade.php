@@ -1,4 +1,4 @@
-<section class="px-32 mt-16 hidden md:grid grid-cols-6 gap-24">
+<section class="px-32 mt-16 hidden lg:grid grid-cols-6 gap-24">
     @foreach ($headerShowCast['cast'] as $actor)
         {{-- Limit the number of results to 10 --}}
         @if ($loop->index < 6)
@@ -8,7 +8,7 @@
     
 </section>
 
-<header class="min-h-96 mt-16 mb-8 mx-32 rounded-xl justify-center hidden md:flex md:flex-col lg:flex-row z-10"
+<header class="min-h-96 my-8 mx-32 rounded-xl justify-center hidden lg:flex md:flex-col lg:flex-row z-10"
     x-data="{isOpen: false}"
     @keydown.escape.window="isOpen = false"
     >
@@ -91,12 +91,12 @@
     </div>
 </header>
 
-{{-- For smaller screens --}}
-<section class="px-8 mt-16 grid grid-cols-3 lg:hidden gap-8">
+{{-- For Tablets --}}
+<section class="px-8 mt-16 hidden md:grid lg:hidden grid-cols-4 gap-8">
     @foreach ($headerShowCast['cast'] as $actor)
 
             {{-- Limit the number of results to 10 --}}
-            @if ($loop->index < 3)
+            @if ($loop->index < 4)
 
                 <x-story-card :actor="$actor" />
 
@@ -110,7 +110,26 @@
     
 </section>
 
-<header class="mt-8 mx-8 p-2 text-white z-10 shadow-lg border-2 border-solid border-pink-500 ring-2 ring-offset-2 ring-offset-gray-900 ring-pink-500 ring-opacity-20 rounded-xl flex flex-col lg:hidden">
+{{-- For smaller screens --}}
+<section class="px-8 mt-16 grid grid-cols-2 md:hidden gap-8">
+    @foreach ($headerShowCast['cast'] as $actor)
+
+            {{-- Limit the number of results to 10 --}}
+            @if ($loop->index < 2)
+
+                <x-story-card :actor="$actor" />
+
+            @else
+                
+                @break
+                    
+            @endif
+
+        @endforeach
+    
+</section>
+
+<header class="mt-8 mx-8 md:mx-16 p-2 text-white z-10 shadow-lg border-2 border-solid border-pink-500 ring-2 ring-offset-2 ring-offset-gray-900 ring-pink-500 ring-opacity-20 rounded-xl flex flex-col lg:hidden">
     <a href="{{ route('tv-shows.show', $headerShow['id']) }}" class="h-96 w-full rounded-lg flex bg-gray-800">
         <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $headerShow['poster_path'] }}" alt="{{ $headerShow['name'] }} show poster" class="h-full w-full rounded-lg rounded-b-none object-cover">
     </a>

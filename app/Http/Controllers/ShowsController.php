@@ -14,9 +14,11 @@ class ShowsController extends Controller
      */
     public function index()
     {
+        $title = "Home";
+
         $popularShows = collect(Http::withToken(config('services.tmdb.token'))
         ->get(config('services.tmdb.tmdb_base_url') . '/tv/popular')
-        ->json()['results'])->take(10);
+        ->json()['results'])->take(15);
 
         $airingToday = collect(Http::withToken(config('services.tmdb.token'))
         ->get(config('services.tmdb.tmdb_base_url') . '/tv/airing_today')
@@ -30,7 +32,7 @@ class ShowsController extends Controller
         ->get(config('services.tmdb.tmdb_base_url') . '/genre/tv/list')
         ->json()['genres'];
 
-        $randomNumber = mt_rand(0, 9);
+        $randomNumber = mt_rand(0, 14);
 
         $headerShow = $popularShows[$randomNumber];
 
@@ -51,7 +53,7 @@ class ShowsController extends Controller
                 return [$genre['id'] => $genre['name']];
         });
             
-        return view('tv-shows.index', ['popularShows' => $popularShows,
+        return view('tv-shows.index', ['title' => $title, 'popularShows' => $popularShows,
         'airingToday' => $airingToday, 'currentlyAiring' => $currentlyAiring, 'genres' => $genres, 'headerShow' => $headerShow, 'headerShowCast' => $headerShowCast, 'headerTrailer' => $headerTrailer, 'headerShowProviders' => $headerShowProviders]);
     }
 
@@ -88,6 +90,12 @@ class ShowsController extends Controller
         ->get(config('services.tmdb.tmdb_base_url') . '/tv/' . $id . '?append_to_response=credits,videos,images')
         ->json();
 
+        $title = $tvShow['name'] . " • TV Shows";
+
+        $recommendations = collect(Http::withToken(config('services.tmdb.token'))
+        ->get(config('services.tmdb.tmdb_base_url') . '/tv/' . $id . '/recommendations')
+        ->json()['results'])->take(5);
+
         $genreArray = Http::withToken(config('services.tmdb.token'))
         ->get(config('services.tmdb.tmdb_base_url') . '/genre/movie/list')
         ->json()['genres'];
@@ -97,7 +105,7 @@ class ShowsController extends Controller
                 return [$genre['id'] => $genre['name']];
         });
 
-        return view('tv-shows.show', ['tvShow' => $tvShow, 'genres' => $genres]);
+        return view('tv-shows.show', ['title' => $title, 'tvShow' => $tvShow, 'recommendations' => $recommendations, 'genres' => $genres]);
     }
 
     /**

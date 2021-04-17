@@ -31492,6 +31492,15 @@ select {
           animation: bounce 1s infinite;
 }
 
+body::-moz-selection {
+  background: #f59e0b40;
+}
+
+body::-moz-selection,
+body::selection {
+  background: #f59e0b40;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -31527,6 +31536,18 @@ select {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-bottom: transparent !important;
+}
+
+.text-green-dm {
+  color: rgb(9, 235, 175);
+}
+
+.bg-green-dm {
+  background: rgb(9, 235, 175);
+}
+
+.border-green-dm {
+  border-color: rgb(9, 235, 175);
 }
 
 @media (min-width: 640px) {

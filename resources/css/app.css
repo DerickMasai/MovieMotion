@@ -2,6 +2,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body::-moz-selection,
+body::selection {
+  background: #f59e0b40;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -31,4 +36,14 @@
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     border-bottom: transparent !important;
+  }
+
+  .text-green-dm {
+    color: rgb(9, 235, 175);
+  }
+  .bg-green-dm {
+    background: rgb(9, 235, 175);
+  }
+  .border-green-dm {
+    border-color: rgb(9, 235, 175);
   }
